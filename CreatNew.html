@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;400;500&display=swap">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="landingPage">
+        <div class="container box">
+            <div class="imgUp">
+                <div class="imagePreview"></div>
+                <label class="btn-primary">
+                    Upload<input type="file" class="uploadFile img" value="Upload Photo"
+                        style="width: 0px;height: 0px;overflow: hidden;">
+                </label>
+            </div>
+            <div class="form-group position-relative">
+                <label for="" class="label-five">Message</label>
+                <div id="app" class="option position-absolute" :style="{ '--mainColor': color }">
+                    <span class="text-black-50 fw-bold position-absolute newPosition">Choose your font color</span>
+                    <ul class="switch-colors position-absolute">
+                        <li data-color="#b71540" @click="updateColor"></li>
+                        <li data-color="#0c2461" @click="updateColor"></li>
+                        <li data-color="#3c6382" @click="updateColor"></li>
+                        <li data-color="#079992" @click="updateColor"></li>
+                        <li data-color="#e58e26" @click="updateColor"></li>
+                    </ul>
+                    <div id="app" class="option" :style="{ '--mainFontSize' : fontSize }">
+                        <span class="text-black-50 fw-bold position-absolute scandPosition">Choose your font size</span>
+                        <ul class="switch-fontSize position-absolute">
+                            <li data-fontSize="15px" @click="updatefontSize">15px</li>
+                            <li data-fontSize="18px" @click="updatefontSize">18px</li>
+                            <li data-fontSize="22px" @click="updatefontSize">22px</li>
+                            <li data-fontSize="25px" @click="updatefontSize">25px</li>
+                            <li data-fontSize="30px" @click="updatefontSize">30px</li>
+                        </ul>
+                        <textarea name="message" class="form-input position-absolute"></textarea>
+                    </div>
+                </div>
+                <div class="form-send position-absolute">
+                    <input type="submit" class="send-button" value="send Data" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./vue.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./new.js"></script>
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                color: '#b71540',
+                fontSize: '15px',
+            },
+            methods: {
+                updateColor: function (event) {
+                    this.color = event.target.getAttribute('data-color');
+                },
+                updatefontSize: function (event) {
+                    this.fontSize = event.target.getAttribute('data-fontSize');
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

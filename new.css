@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 800px;
+}
+
+.landing .box {
+    position: relative;
+    margin: 80px 31px;
+    width: 1168px;
+    height: 631px;
+    padding: 5px 16px;
+}
+
+.landing .newHeight {
+    height: 800px;
+}
+
+.box {
+    box-shadow: 0px 0px 20px 0px #caccd1;
+    border: 1px solid #caccd1;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 15px;
+}
+
+.landing .box .disactive {
+    display: none;
+}
+
+/* start */
+
+.imagePreview {
+    width: 100px;
+    height: 100px;
+    /* background-position: center center; */
+    background: url('./icon.jpg');
+    /* background-color: #fff; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px 2px rgb(0 0 0 / 20%);
+    margin-top: -5px;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+}
+
+.imgUp {
+    margin-left: 45%;
+    margin-top: 60px;
+}
+
+.del {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.imgAdd {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #4bd7ef;
+    color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* end */
+
+.box .singUp {
+    width: 45%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.box .logIn {
+    width: 45%;
+    height: 100%;
+    float: right;
+    padding: 10px;
+}
+
+.box .headBox {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #4f86c4;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.logIn input,
+.singUp input {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: calc(100% - 10px);
+    height: 50px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.logIn input:focus,
+.singUp input:focus {
+    outline: none;
+}
+
+.logIn span,
+.singUp span {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 25%;
+}
+
+.logIn button,
+.singUp button {
+    margin-top: 40px;
+    margin-left: 40%;
+    width: 100px;
+    height: 50px;
+    background-color: #005ea6;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #005ea6;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box .line {
+    position: relative;
+    top: 50%;
+    left: 4%;
+    font-weight: bold;
+}
+
+.box .line::before {
+    width: 4px;
+    height: 250px;
+    left: 46%;
+    top: -260px;
+}
+
+.line::after {
+    width: 4px;
+    height: 250px;
+    left: 46%;
+    bottom: -260px;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    background-color: #a9a7a7;
+    position: absolute;
+}
+
+.landingPage {
+    margin-top: 50px;
+}
+
+.landingPage .container {
+    width: 800px;
+    height: 650px;
+    margin-left: 20%;
+}
+
+.landing .container img {
+    width: 150px;
+    height: 150px;
+}
+
+.landing .container .foto {
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+.landing .container .form-group {
+    display: inline-block;
+}
+
+.form-group {
+    margin-left: 25%;
+}
+
+.form-group .option {
+    bottom: 50px;
+}
+
+.form-group .newPosition {
+    top: 125px;
+    width: 185px;
+}
+.form-group .scandPosition {
+    top: 185px;
+    width: 170px;
+}
+
+.form-group .label-five {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 18px;
+    margin-left: 25%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-group .form-input {
+    padding: 10px 15px;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    resize: none;
+    width: 400px;
+    height: 100px;
+    color: var(--mainColor);
+    font-size: var(--mainFontSize);
+    top: 250px;
+}
+
+.form-send {
+    top: 350px;
+}
+
+.form-send .send-button {
+    display: block;
+    background-color: #2196f3;
+    color: #fff;
+    border-color: transparent;
+    padding: 10px 20px;
+    width: 400px;
+    font-size: 24px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.container .switch-colors {
+    left: 350px;
+    top: 130px;
+    display: inline-flex;
+}
+
+.container .switch-colors,
+.container .switch-fontSize {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+.container .switch-colors li {
+    width: 20px;
+    height: 20px;
+    background-color: #ddd;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.container .switch-colors li:first-child {
+    background-color: #b71540;
+    position: absolute;
+    right: 120px;
+}
+
+.container .switch-colors li:nth-child(2) {
+    background-color: #0c2461;
+    position: absolute;
+    right: 90px;
+}
+
+.container .switch-colors li:nth-child(3) {
+    background-color: #3c6382;
+    position: absolute;
+    right: 60px;
+}
+
+.container .switch-colors li:nth-child(4) {
+    background-color: #079992;
+    position: absolute;
+    right: 30px;
+}
+
+.container .switch-colors li:last-child {
+    background-color: #e58e26;
+}
+
+.container .switch-fontSize {
+    left: 115px;
+    top: 200px;
+    display: inline-flex;
+}
+
+.container .switch-fontSize li {
+    width: 45px;
+    height: 25px;
+    /* display: inline-block; */
+    cursor: pointer;
+    padding: 3px;
+    user-select: none;
+}
+
+.container .switch-fontSize li:first-child {
+    font-size: 15px;
+    position: absolute;
+    left: -5px;
+    bottom: -24px;
+}
+
+.container .switch-fontSize li:nth-child(2) {
+    font-size: 18px;
+    margin-left: -10px;
+    position: absolute;
+    left: 40px;
+    bottom: -22px;
+}
+
+.container .switch-fontSize li:nth-child(3) {
+    font-size: 22px;
+    margin-left: -2px;
+    position: absolute;
+    left: 80px;
+    bottom: -17px;
+}
+
+.container .switch-fontSize li:nth-child(4) {
+    font-size: 25px;
+    margin-left: 7px;
+    position: absolute;
+    left: 125px;
+    bottom: -15px;
+}
+
+.container .switch-fontSize li:last-child {
+    font-size: 30px;
+    margin-left: 13px;
+    position: absolute;
+    left: 180px;
+    bottom: -10px;
+}
